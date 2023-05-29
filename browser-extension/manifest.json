@@ -1,0 +1,16 @@
+{
+  "name": "Trust No Review",
+  "description": "Checks the authenticity of product reviews on Amazon.",
+  "action": {},
+  "manifest_version": 3,
+  "version": "1.0",
+  "permissions": ["activeTab", "scripting", "tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "*://*.amazon.com/*",
+    "*://localhost/*",
+    "*://127.0.0.1/*"
+  ]
+}
